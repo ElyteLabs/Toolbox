@@ -64,15 +64,6 @@ Replace `Tag` with the latest version from the Releases page.
         // Your code to be delayed by 2000 milliseconds
     }
 
-### Log Extensions
-
-
-    logD("Debug message")
-    logE("Error message")
-    logI("Info message")
-    logV("Verbose message")
-    logW("Warning message") 
-
 ### Permission Helpers
 
 
