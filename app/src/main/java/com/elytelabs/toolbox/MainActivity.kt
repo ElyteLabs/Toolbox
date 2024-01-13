@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val email = findViewById<Button>(R.id.email)
         email.setOnClickListener {
             sendFeedbackEmail(this,
-                "example@abc", "subject", getString(R.string.app_name))
+                arrayOf("example@abc.com"), getString(R.string.app_name))
         }
 
         val getAppVersionName = findViewById<Button>(R.id.getAppVersionName)

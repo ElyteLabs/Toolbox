@@ -41,11 +41,11 @@ object UtilKit {
         }
     }
 
-    fun sendFeedbackEmail(context: Context, email: String, subject: String, appName: String,) {
+    fun sendFeedbackEmail(context: Context, email: Array<String>, appName: String,) {
         val intent = Intent(Intent.ACTION_SENDTO).apply {
             data = Uri.parse("mailto:")
-            putExtra(Intent.EXTRA_EMAIL, arrayOf(email))
-            putExtra(Intent.EXTRA_SUBJECT, subject )
+            putExtra(Intent.EXTRA_EMAIL, email)
+            putExtra(Intent.EXTRA_SUBJECT, "$appName Feedback" )
             putExtra(Intent.EXTRA_TEXT,
                 "--------------------------------------------------------------- \n " +
                         "Please keep the following information " +
